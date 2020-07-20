@@ -14,11 +14,11 @@ spec:
         env: production 
     spec:
       containers:
-       - name: mytask-con
-         image: httpd
-	 volumeMounts:
-	  - name: mypd
-	    mountPath: /var/www/html
+      - name: mytask-con
+        image: httpd
+	volumeMounts:
+	- name: mypd
+	  mountPath: /var/www/html
     volumes:
       - name: mypd
         persistentVolumeClaim:
