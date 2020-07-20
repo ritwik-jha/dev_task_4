@@ -17,8 +17,8 @@ spec:
        - name: mytask-con
          image: httpd
 	 volumeMounts:
-	  - mountPath: /var/www/html
-	      name: mypd
+	   -name: mypd
+	    mountPath: /var/www/html
     volumes:
       - name: mypd
         persistentVolumeClaim:
