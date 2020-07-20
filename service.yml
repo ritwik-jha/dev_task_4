@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service 
 metadata:
-  name: task3-service 
+  name: task4-service 
 spec:
   selector:
     env: production
