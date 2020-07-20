@@ -16,10 +16,10 @@ spec:
       containers:
        - name: mytask-con
          image: httpd
-	    volumeMounts:
-	    - mountPath: /var/www/html
+	 volumeMounts:
+	  - mountPath: /var/www/html
 	      name: mypd
-	 volumes:
-	  - name: mypd
-	    persistentVolumeClaim:
-	      claimName: task3-pvc
+    volumes:
+      - name: mypd
+        persistentVolumeClaim:
+          claimName: task3-pvc
