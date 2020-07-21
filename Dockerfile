@@ -6,6 +6,6 @@ RUN httpd
 
 WORKDIR /var/www/html/
 
-COPY  /root/dev_task_3  .
+COPY  /root/dev_task_4  .
 
 
