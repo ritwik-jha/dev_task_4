@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
-  name: task4-deply
+  name: task4-deploy
 spec:
   replicas: 3
   selector:
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: mytask-con
-        image: httpd
+        image: ritwik46/task4image:v1
         volumeMounts:
         - mountPath: /var/www/html
           name: mypd
